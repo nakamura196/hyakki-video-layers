@@ -1,0 +1,639 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://nakamura196.github.io/hyakki-video-layers/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "百鬼夜行図"
+    ]
+  },
+  "requiredStatement": {
+    "label": {
+      "ja": [
+        "帰属表示"
+      ]
+    },
+    "value": {
+      "ja": [
+        "東京大学総合図書館所蔵「百鬼夜行図」を改変"
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https://www.lib.u-tokyo.ac.jp/",
+      "type": "Agent",
+      "label": {
+        "ja": [
+          "東京大学総合図書館"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https://www.lib.u-tokyo.ac.jp/",
+          "type": "Text",
+          "format": "text/html",
+          "label": {
+            "ja": [
+              "東京大学総合図書館"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "viewingDirection": "right-to-left",
+  "items": [
+    {
+      "id": "https://example.org/hyakki/canvas/1",
+      "type": "Canvas",
+      "width": 79508,
+      "height": 3082,
+      "items": [
+        {
+          "id": "https://example.org/hyakki/canvas/1/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://example.org/hyakki/canvas/1/page/1/anno/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 79508,
+                "height": 3082,
+                "service": [
+                  {
+                    "id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif",
+                    "type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              },
+              "target": "https://example.org/hyakki/canvas/1"
+            }
+          ]
+        },
+        {
+          "id": "https://example.org/hyakki/canvas/1/page/videos",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_002.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 1280,
+                "height": 673,
+                "label": {
+                  "en": [
+                    "A grotesque demon with wild white hair l…"
+                  ],
+                  "ja": [
+                    "白髪の鬼が不安定な足取りでよろめきながら前に進み"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "A grotesque demon with wild white hair lurches forward in an unsteady gait, its bulging eye rolling wildly as it clutches a flaming black vessel. The creature's tattered robes billow and flutter with each shambling step, while the flames atop its carried object flicker and dance erratically. Its gnarled hands grip the vessel tightly as it sways from side to side, occasionally stumbling before regaining its awkward rhythm and returning to its initial hunched posture. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "白髪の鬼が不安定な足取りでよろめきながら前に進み、燃える黒い器を抱えている。ボロボロの衣がはためき、器の炎が揺らめく。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=23820,154,5215,2742"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/3",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_003.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 913,
+                "height": 720,
+                "label": {
+                  "en": [
+                    "A wooden chest or table bounces and hops…"
+                  ],
+                  "ja": [
+                    "木の箱が跳ね回り"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "A wooden chest or table bounces and hops forward as mischievous spirits emerge from its drawers and openings, their wispy forms swirling around the animated furniture. The supernatural creatures peek out playfully before retreating back inside, while the wooden object rocks gently from side to side with each ghostly inhabitant's movement. The spirits' ethereal forms undulate like smoke as they circle the possessed furniture piece before settling back into their hiding spots. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "木の箱が跳ね回り、引き出しから妖怪たちが現れては隠れる。煙のような霊体が家具の周りを漂う。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=31827,143,3466,2733"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/4",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_004.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 850,
+                "height": 719,
+                "label": {
+                  "en": [
+                    "Three supernatural beings dance and cavo…"
+                  ],
+                  "ja": [
+                    "三体の妖怪が賑やかな行列で踊る"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "Three supernatural beings dance and cavort in a lively procession - the large figure in green and red robes sways and steps forward with exaggerated theatrical movements, while the red-faced demon above gestures dramatically with its fan, and the smaller figure below hops and bounces playfully while carrying its drum. Their flowing garments ripple and flutter with each movement, and they occasionally turn their heads or shift their positions while maintaining the rhythmic forward progression of their eternal parade. The entire group returns to their original formation after completing their animated sequence. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "三体の妖怪が賑やかな行列で踊る。緑と赤の衣の大きな者が大げさに歩き、赤い顔の鬼が扇を振り、小さな者が太鼓を持って跳ねる。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=35325,163,3220,2727"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/5",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_005.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 979,
+                "height": 1080,
+                "label": {
+                  "en": [
+                    "A kappa-like demon strides forward with …"
+                  ],
+                  "ja": [
+                    "河童のような鬼が蓮の葉を掲げ"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "A kappa-like demon strides forward with determined steps, its webbed feet splashing slightly with each footfall. The flowing white robes billow and ripple in the night breeze while the creature's outstretched arms sway naturally with its walking rhythm. The large lotus leaf held aloft gently rocks and rotates as if caught by wind currents, creating a graceful parasol-like motion above. After completing several purposeful steps, the demon cycles back to its initial striding pose. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "河童のような鬼が蓮の葉を掲げ、決然と歩く。白い衣が夜風に揺れ、蓮の葉が傘のように回転する。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=38601,181,2440,2690"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/6",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_006.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 567,
+                "height": 720,
+                "label": {
+                  "en": [
+                    "A demonic figure in flowing robes dances…"
+                  ],
+                  "ja": [
+                    "流れる衣の鬼がシンバルを打ち鳴らしながら激しく踊る"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "A demonic figure in flowing robes dances wildly while brandishing cymbals, its arms swaying rhythmically as it strikes the instruments together in a hypnotic percussion. The creature's red hakama pants ripple and flutter with each energetic movement, while its long hair whips back and forth. A fox-like spirit below playfully circles around the dancing demon, its tail swishing as it moves in a continuous orbit. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "流れる衣の鬼がシンバルを打ち鳴らしながら激しく踊る。赤い袴がはためき、下方では狐の精霊が周りを駆け回る。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=41097,155,2146,2721"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/7",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_007.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 927,
+                "height": 720,
+                "label": {
+                  "en": [
+                    "The red-faced demon with the white hood …"
+                  ],
+                  "ja": [
+                    "白頭巾の赤い顔の鬼が緑の縄を八の字に振り回す"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "The red-faced demon with the white hood gracefully swings the long green rope or whip in a rhythmic figure-eight pattern, his body swaying slightly with each fluid motion. His white robes flutter gently as he moves, while his fierce expression remains focused on the hypnotic dance of the green cord through the air. The rope traces smooth arcs that loop back to the starting position, creating a mesmerizing continuous cycle. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "白頭巾の赤い顔の鬼が緑の縄を八の字に振り回す。白い衣が揺れ、縄が滑らかな弧を描いて舞う。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=43300,142,3506,2721"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/8",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_008.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 364,
+                "height": 1080,
+                "label": {
+                  "en": [
+                    "The candle-carrying demon sways gently f…"
+                  ],
+                  "ja": [
+                    "蝋燭を持つ妖怪が頭の上の皿でバランスを取りながらゆっくり揺れる"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "The candle-carrying demon sways gently from side to side while balancing the dish on its head, the flame flickering softly in rhythm with its movement. Its long pole arm rocks slightly as it shifts its weight, and the small lantern at the pole's end swings in a gentle pendulum motion. The creature's base rotates slowly in place, completing a full turn before returning to its original position. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "蝋燭を持つ妖怪が頭の上の皿でバランスを取りながらゆっくり揺れる。長い棒の先の提灯が振り子のように揺れる。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=46830,124,930,2758"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/9",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_009.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 942,
+                "height": 720,
+                "label": {
+                  "en": [
+                    "A serpentine white dragon with an elonga…"
+                  ],
+                  "ja": [
+                    "白い龍が空中を優雅にうねりながら進む"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "A serpentine white dragon with an elongated neck gracefully undulates through the air, its body creating smooth S-curves as it moves. The creature's neck sways gently from side to side while its flowing form creates rippling waves along its entire length. Its mouth opens and closes slowly as if breathing or speaking ancient words, while its body maintains a continuous flowing motion that cycles seamlessly. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "白い龍が空中を優雅にうねりながら進む。長い首が左右に揺れ、全身が波のように流れる。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=47800,106,3633,2776"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/10",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_010.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 1920,
+                "height": 980,
+                "label": {
+                  "en": [
+                    "The pale"
+                  ],
+                  "ja": [
+                    "黒髪の細長い妖怪が霧の中を漂う"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "The pale, elongated creature with dark hair gracefully floats forward through the misty air, its serpentine lower body undulating in smooth, wave-like motions. Its arms sway gently as it drifts, while wisps of ethereal mist swirl around its form. The flowing movement creates a hypnotic rhythm as the spirit glides in an endless, cyclical path. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "黒髪の細長い妖怪が霧の中を漂う。蛇のような下半身がうねり、霊的な霧が周りに渦巻く。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=51457,114,5414,2764"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/11",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_011.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 990,
+                "height": 720,
+                "label": {
+                  "en": [
+                    "The serpentine dragon creature slithers …"
+                  ],
+                  "ja": [
+                    "蛇のような龍がうねりながら前に進む"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "The serpentine dragon creature slithers forward with undulating body movements, its scaled form weaving sinuously as it progresses through the nocturnal parade. Its long tail curves and flexes behind while its head bobs slightly with each forward motion. The creature's limbs move in a rhythmic crawling gait, returning to its original position to complete the walking cycle. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "蛇のような龍がうねりながら前に進む。鱗のある体がくねくねと進み、頭が前後に揺れる。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=58796,158,3744,2721"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/12",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_012.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 1280,
+                "height": 709,
+                "label": {
+                  "en": [
+                    "A menacing demon with wild hair and fier…"
+                  ],
+                  "ja": [
+                    "荒い髪の恐ろしい鬼が空中を突進し"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "A menacing demon with wild hair and fierce expression lunges forward through the air, its muscular arms reaching out aggressively while its legs kick behind in a dynamic flying motion. Its hair and clothing flutter wildly in the wind as it moves in an arc-like pattern, swooping down toward the fleeing figure below before pulling back up to repeat the threatening dive. The pursued figure scrambles frantically on the ground, arms pumping as they run in terror, occasionally glancing back over their shoulder at their supernatural pursuer. The cycle repeats as the demon continues its relentless aerial chase while the human figure maintains their desperate escape attempt. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "荒い髪の恐ろしい鬼が空中を突進し、逃げる人間を追いかける。鬼が急降下を繰り返し、人間は必死に走り続ける。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=62588,151,4921,2727"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/13",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_013.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 825,
+                "height": 720,
+                "label": {
+                  "en": [
+                    "A miko priestess in flowing red hakama p…"
+                  ],
+                  "ja": [
+                    "巫女が赤い袴と花柄の着物で優雅に舞を舞い"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "A miko priestess in flowing red hakama pants and floral kimono performs a graceful ritual dance, her arms moving in slow, ceremonial gestures while her layered garments sway gently with each step. The large turtle-like creature beside her slowly extends and retracts its neck, blinking its ancient eyes as its shell subtly rises and falls with breathing. The priestess's white hair ornaments flutter softly as she completes her circular dance movement, returning to her original stance. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "巫女が赤い袴と花柄の着物で優雅に舞を舞い、隣の大きな亀が首を伸び縮みさせ、甲羅がゆっくり呼吸する。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=67557,118,3132,2733"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/14",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_014.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 1920,
+                "height": 962,
+                "label": {
+                  "en": [
+                    "The grotesque demons and spirits sway an…"
+                  ],
+                  "ja": [
+                    "異形の鬼や精霊たちが夜の行列を練り歩く"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "The grotesque demons and spirits sway and bob as they process through their nocturnal parade, with flowing robes and hair undulating in ethereal wind. The floating heads drift up and down in gentle arcs while the standing figures rock side to side with slow, supernatural gaits. Their expressions subtly shift between menacing grins and contemplative stares as they continue their endless march from right to left across the composition. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "異形の鬼や精霊たちが夜の行列を練り歩く。浮遊する頭が上下に漂い、立っている者たちがゆっくりと揺れる。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=70746,116,5430,2721"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/15",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_015.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 1920,
+                "height": 1059,
+                "label": {
+                  "en": [
+                    "A group of supernatural creatures moves …"
+                  ],
+                  "ja": [
+                    "妖怪たちが右から左へゆっくりと行進する"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "A group of supernatural creatures moves in a slow, rhythmic procession from right to left, each maintaining their distinct gait - the winged tengu figure flaps its wings occasionally while striding forward, the central demon sways its large head as it shuffles along, and the rightmost multi-headed creature undulates with serpentine grace. Their robes and fabric elements flutter gently in an otherworldly breeze as they continue their eternal parade. The small objects they carry bob and sway with their movements, creating a hypnotic collective rhythm. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "妖怪たちが右から左へゆっくりと行進する。天狗が翼を羽ばたかせ、中央の鬼が大きな頭を揺らし、多頭の妖怪がうねる。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=18851,158,4929,2720"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/16",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_016.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 1280,
+                "height": 716,
+                "label": {
+                  "en": [
+                    "The turbaned figure on the left sways rh…"
+                  ],
+                  "ja": [
+                    "左のターバンの者がスクロールを持って歩き"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "The turbaned figure on the left sways rhythmically as it walks forward, its flowing robes and decorative streamers undulating gently in an ethereal breeze while clutching scrolls that flutter softly. The central beast-like creature in blue robes shuffles along with a hunched, lumbering gait, its wild fur rippling as it moves. The red-skinned oni on the right strides confidently with an exaggerated swagger, its wild hair and tattered garments swaying with each step as it grips its long staff. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "左のターバンの者がスクロールを持って歩き、中央の青い衣の獣が前かがみで進み、右の赤い鬼が杖を握って堂々と闊歩する。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=13945,161,4873,2727"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/17",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_017.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 1025,
+                "height": 1080,
+                "label": {
+                  "en": [
+                    "A hairy horned demon on the left takes c…"
+                  ],
+                  "ja": [
+                    "左の角のある毛深い鬼が白い布を掲げて後退し"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "A hairy horned demon on the left takes cautious steps backward while holding up a white cloth, its long dark hair swaying with each movement. On the right, a spotted creature with wild spiky hair crouches and sways side to side, its clawed hands gesturing expressively as small horns on its head bob with the motion. Both figures rock gently in place, the demon's cloth fluttering softly in an unfelt breeze. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "左の角のある毛深い鬼が白い布を掲げて後退し、右の斑点のある妖怪がしゃがんで左右に揺れる。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=11329,171,2584,2721"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/18",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_018.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 1353,
+                "height": 1080,
+                "label": {
+                  "en": [
+                    "The wicker basket sways gently from side…"
+                  ],
+                  "ja": [
+                    "籠が左右に揺れ"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "The wicker basket sways gently from side to side as supernatural flames dance and flicker from its opening, casting shifting orange and red light. Small demon spirits peek out and duck back into the basket playfully while wispy smoke tendrils curl upward. The basket rocks slightly as if being carried by invisible hands, with the flames pulsing brighter and dimmer in a rhythmic cycle. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "籠が左右に揺れ、開口部から超自然的な炎が踊る。小さな鬼が覗いては隠れ、煙が立ち上る。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=7871,185,3426,2734"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/19",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_019.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 1773,
+                "height": 1080,
+                "label": {
+                  "en": [
+                    "A horned demon with flowing robes leaps …"
+                  ],
+                  "ja": [
+                    "角のある鬼が流れる衣で空中を優雅に跳ぶ"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "A horned demon with flowing robes leaps gracefully through the air, its limbs extending and contracting in a rhythmic bounding motion. Its wild hair and fabric sashes flutter and wave behind it as it moves through the misty atmosphere. The creature's expression shifts subtly between mischievous glee and focused determination as it continues its eternal flight through the night parade. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "角のある鬼が流れる衣で空中を優雅に跳ぶ。髪と帯が風にたなびき、表情が悪戯っぽさと決意の間で変わる。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=3299,175,4539,2764"
+            },
+            {
+              "id": "https://example.org/hyakki/canvas/1/annotations/anno/20",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_020.mp4",
+                "type": "Video",
+                "format": "video/mp4",
+                "width": 1021,
+                "height": 1080,
+                "label": {
+                  "en": [
+                    "A tsukumogami arrow-spirit in grey robes…"
+                  ],
+                  "ja": [
+                    "弓矢の付喪神が灰色の衣で大きな弓を構えて進む"
+                  ]
+                },
+                "summary": {
+                  "en": [
+                    "A tsukumogami arrow-spirit in grey robes strides forward while brandishing a large bow with a feathered arrow nocked, its body swaying with each determined step. Beside it, a mischievous flame-headed imp runs alongside, clutching a white cloth that billows behind it as flames flicker and dance atop its head. The bow sways and flexes slightly with each step while the arrow rattles in place, and the imp's bare feet pad rapidly as it struggles to keep pace with its taller companion. Gentle animation in the style of the original artwork."
+                  ],
+                  "ja": [
+                    "弓矢の付喪神が灰色の衣で大きな弓を構えて進む。隣で火焔の小鬼が白い布をなびかせながら走る。"
+                  ]
+                }
+              },
+              "target": "https://example.org/hyakki/canvas/1#xywh=29354,385,2329,2463"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
