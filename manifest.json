@@ -4,18 +4,289 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "百鬼夜行図"
+      "百鬼夜行図（改変版：AI 生成の動画を重ねたもの）"
+    ],
+    "en": [
+      "Hyakki Yagyō-zu (Night Parade of One Hundred Demons), modified: with AI-generated video layers"
     ]
   },
+  "summary": {
+    "ja": [
+      "【AI 生成のコンテンツを含む改変版です】東京大学総合図書館が所蔵する絵巻『百鬼夜行図』の画像に、絵の一部を AI で動かした 8 秒の動画 19 本を、切り出した元の場所に重ねたマニフェストです。動画の動き・音・細部は AI が作ったもので、原資料に描かれたものでも、学術的な復元でもありません。原資料の画像そのものには手を加えておらず、東京大学の IIIF Image API から読み込んでいます。原資料の姿を確かめるときや研究の典拠には、動画を隠すか、原資料のマニフェストをご覧ください。IIIF Cookbook のレシピ 0036（複数の画像からの合成）と同じ形で、追加の画像の代わりに動画（Video）を、#xywh で Canvas の一部に描いています。Canvas には duration を持たせていません。各動画の summary には、動画を作るときに使った動きの指示文が入っています。"
+    ],
+    "en": [
+      "[A modified version that contains AI-generated content] The handscroll Hyakki Yagyō-zu, held by The University of Tokyo General Library, with 19 eight-second AI-generated clips placed back on the regions of the picture they were made from. The motion, sound and details of the clips were made by AI: they are not in the original, and they are not a scholarly reconstruction. The image of the original itself is not altered; it is loaded from the IIIF Image API of The University of Tokyo. To see the original as it is, or to cite it in research, hide the clips or use the original manifest. The manifest has the shape of IIIF Cookbook recipe 0036 (Composition from Multiple Images): each added resource is a Video, painted on a region of the Canvas with #xywh. The Canvas has no duration. The summary of each clip is the motion prompt used to generate it."
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "資料名"
+        ],
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "ja": [
+          "百鬼夜行図（ヒャッキヤコウズ）"
+        ],
+        "en": [
+          "Hyakki Yagyō-zu (百鬼夜行図)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "別資料名"
+        ],
+        "en": [
+          "Alternative title"
+        ]
+      },
+      "value": {
+        "ja": [
+          "百鬼夜行絵巻"
+        ],
+        "en": [
+          "Hyakki Yagyō emaki (百鬼夜行絵巻)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "編著者"
+        ],
+        "en": [
+          "Creator"
+        ]
+      },
+      "value": {
+        "ja": [
+          "藤原行秀 [原] 筆; 源廣迢 [摸] 冩"
+        ],
+        "en": [
+          "藤原行秀 [原] 筆; 源廣迢 [摸] 冩"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "書写年"
+        ],
+        "en": [
+          "Date"
+        ]
+      },
+      "value": {
+        "ja": [
+          "[江戸中期]"
+        ],
+        "en": [
+          "Mid Edo period"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "形態"
+        ],
+        "en": [
+          "Physical description"
+        ]
+      },
+      "value": {
+        "ja": [
+          "紙本著色 絵巻 1軸; 28cm"
+        ],
+        "en": [
+          "Handscroll, colour on paper, 1 scroll; 28 cm"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "請求記号"
+        ],
+        "en": [
+          "Call number"
+        ]
+      },
+      "value": {
+        "ja": [
+          "A00:6275"
+        ],
+        "en": [
+          "A00:6275"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ],
+        "en": [
+          "Holding institution"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東京大学総合図書館"
+        ],
+        "en": [
+          "The University of Tokyo General Library"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "原資料"
+        ],
+        "en": [
+          "Original"
+        ]
+      },
+      "value": {
+        "ja": [
+          "<a href=\"https://da.dl.itc.u-tokyo.ac.jp/portal/assets/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b\">東京大学デジタルアーカイブポータル</a>（<a href=\"https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest\">IIIF マニフェスト</a>）"
+        ],
+        "en": [
+          "<a href=\"https://da.dl.itc.u-tokyo.ac.jp/portal/assets/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b\">The University of Tokyo Digital Archive Portal</a> (<a href=\"https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest\">IIIF manifest</a>)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "画像の利用条件"
+        ],
+        "en": [
+          "Image terms of use"
+        ]
+      },
+      "value": {
+        "ja": [
+          "<a href=\"https://www.lib.u-tokyo.ac.jp/ja/library/general/reuse\">東京大学総合図書館「画像データ等の利用について」</a>"
+        ],
+        "en": [
+          "<a href=\"https://www.lib.u-tokyo.ac.jp/ja/library/general/reuse\">The University of Tokyo General Library, Use of Digital Contents</a>"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "AI 生成のコンテンツ"
+        ],
+        "en": [
+          "AI-generated content"
+        ]
+      },
+      "value": {
+        "ja": [
+          "重ねた動画はすべて AI が生成したもので、原資料には含まれません。動き・表情・音（効果音や環境音）・原画に無い細部は AI の想像で、原画の作者の意図や、当時の見せ方を示すものではありません。形や色が原画と違う所や、原画に無いものが現れる所があります。"
+        ],
+        "en": [
+          "All the clips are AI-generated and are not part of the original. Their motion, expressions, sound (effects and ambience) and any details not in the picture are the AI's invention; they do not show what the original artist intended or how the scroll was presented. Shapes and colours differ from the picture in places, and things not in the picture appear."
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "改変の内容"
+        ],
+        "en": [
+          "Modifications"
+        ]
+      },
+      "value": {
+        "ja": [
+          "(1) 原資料の画像から、人物・妖怪の描かれた範囲を切り出した。(2) 切り出した画像と動きの指示文から、AI で 8 秒の動画を作った。(3) 動画の端を切りそろえ、切り出した元の範囲（#xywh）に重ねた。原資料の画像は変えていない。"
+        ],
+        "en": [
+          "(1) Regions with figures were cropped from the image of the original. (2) Each crop and a motion prompt were turned into an 8-second clip by AI. (3) The clips were trimmed and painted back on the regions they were cropped from (#xywh). The image of the original is unchanged."
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "動画"
+        ],
+        "en": [
+          "Clips"
+        ]
+      },
+      "value": {
+        "ja": [
+          "19 本、各 8 秒、音あり。絵の一部を切り出した画像と動きの指示文から、Google Veo 3 で生成した。指示文は Claude Sonnet が、資料の説明と切り出した画像をもとに書いた。"
+        ],
+        "en": [
+          "19 clips, 8 seconds each, with sound. Generated with Google Veo 3 from a crop of the picture and a motion prompt. The prompts were written by Claude Sonnet from a description of the scroll and the crop."
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作成"
+        ],
+        "en": [
+          "Made by"
+        ]
+      },
+      "value": {
+        "ja": [
+          "中村 覚（東京大学）"
+        ],
+        "en": [
+          "Satoru Nakamura (The University of Tokyo)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "関連"
+        ],
+        "en": [
+          "Related"
+        ]
+      },
+      "value": {
+        "ja": [
+          "<a href=\"https://kasane.ldas.jp/ja/usecases/hyakki-video-layers/\">IIIF Kasane のユースケース</a>、<a href=\"https://github.com/nakamura196/hyakki-video-layers\">GitHub のリポジトリ</a>"
+        ],
+        "en": [
+          "<a href=\"https://kasane.ldas.jp/en/usecases/hyakki-video-layers/\">IIIF Kasane use case</a>, <a href=\"https://github.com/nakamura196/hyakki-video-layers\">GitHub repository</a>"
+        ]
+      }
+    }
+  ],
   "requiredStatement": {
     "label": {
       "ja": [
         "帰属表示"
+      ],
+      "en": [
+        "Attribution"
       ]
     },
     "value": {
       "ja": [
-        "東京大学総合図書館所蔵「百鬼夜行図」を改変"
+        "『百鬼夜行図』（東京大学総合図書館所蔵）を改変。重ねた動画は、この画像をもとに AI（Google Veo 3）が生成したもので、原資料には含まれない"
+      ],
+      "en": [
+        "Hyakki Yagyō-zu (The University of Tokyo General Library), modified. The clips are generated by AI (Google Veo 3) from this image and are not part of the original"
       ]
     }
   },
@@ -26,6 +297,9 @@
       "label": {
         "ja": [
           "東京大学総合図書館"
+        ],
+        "en": [
+          "The University of Tokyo General Library"
         ]
       },
       "homepage": [
@@ -36,8 +310,69 @@
           "label": {
             "ja": [
               "東京大学総合図書館"
+            ],
+            "en": [
+              "The University of Tokyo General Library"
             ]
           }
+        }
+      ]
+    },
+    {
+      "id": "https://github.com/nakamura196",
+      "type": "Agent",
+      "label": {
+        "ja": [
+          "中村 覚（東京大学）"
+        ],
+        "en": [
+          "Satoru Nakamura (The University of Tokyo)"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https://github.com/nakamura196",
+          "type": "Text",
+          "format": "text/html",
+          "label": {
+            "ja": [
+              "中村 覚（GitHub）"
+            ],
+            "en": [
+              "Satoru Nakamura (GitHub)"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://nakamura196.github.io/hyakki-video-layers/",
+      "type": "Text",
+      "format": "text/html",
+      "label": {
+        "ja": [
+          "このマニフェストの説明"
+        ],
+        "en": [
+          "About this manifest"
+        ]
+      }
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/38601,181,2440,2690/,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg",
+      "width": 363,
+      "height": 400,
+      "service": [
+        {
+          "id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif",
+          "type": "ImageService2",
+          "profile": "level2"
         }
       ]
     }
@@ -47,6 +382,22 @@
     {
       "id": "https://example.org/hyakki/canvas/1",
       "type": "Canvas",
+      "label": {
+        "ja": [
+          "百鬼夜行図"
+        ],
+        "en": [
+          "Hyakki Yagyō-zu"
+        ]
+      },
+      "summary": {
+        "ja": [
+          "原資料の画像（全巻）の上に、AI が生成した動画を重ねている"
+        ],
+        "en": [
+          "The image of the whole scroll, with AI-generated clips painted on it"
+        ]
+      },
       "width": 79508,
       "height": 3082,
       "items": [
@@ -89,23 +440,80 @@
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
-                "height": 673,
+                "height": 672,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "A grotesque demon with wild white hair l…"
-                  ],
                   "ja": [
-                    "白髪の鬼が不安定な足取りでよろめきながら前に進み"
+                    "燃える器を抱えてよろめく白髪の鬼"
+                  ],
+                  "en": [
+                    "White-haired demon staggering with a flaming vessel"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "A grotesque demon with wild white hair lurches forward in an unsteady gait, its bulging eye rolling wildly as it clutches a flaming black vessel. The creature's tattered robes billow and flutter with each shambling step, while the flames atop its carried object flicker and dance erratically. Its gnarled hands grip the vessel tightly as it sways from side to side, occasionally stumbling before regaining its awkward rhythm and returning to its initial hunched posture. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: A grotesque demon with wild white hair lurches forward in an unsteady gait, its bulging eye rolling wildly as it clutches a flaming black vessel. The creature's tattered robes billow and flutter with each shambling step, while the flames atop its carried object flicker and dance erratically. Its gnarled hands grip the vessel tightly as it sways from side to side, occasionally stumbling before regaining its awkward rhythm and returning to its initial hunched posture. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "白髪の鬼が不安定な足取りでよろめきながら前に進み、燃える黒い器を抱えている。ボロボロの衣がはためき、器の炎が揺らめく。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：白髪の鬼が不安定な足取りでよろめきながら前に進み、燃える黒い器を抱えている。ボロボロの衣がはためき、器の炎が揺らめく。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=23820,154,5215,2742 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=23820,154,5215,2742"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "白髪の鬼が不安定な足取りでよろめきながら前に進み、燃える黒い器を抱えている。ボロボロの衣がはためき、器の炎が揺らめく。"
+                      ],
+                      "en": [
+                        "A grotesque demon with wild white hair lurches forward in an unsteady gait, its bulging eye rolling wildly as it clutches a flaming black vessel. The creature's tattered robes billow and flutter with each shambling step, while the flames atop its carried object flicker and dance erratically. Its gnarled hands grip the vessel tightly as it sways from side to side, occasionally stumbling before regaining its awkward rhythm and returning to its initial hunched posture. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=23820,154,5215,2742"
             },
@@ -117,24 +525,81 @@
                 "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_003.mp4",
                 "type": "Video",
                 "format": "video/mp4",
-                "width": 913,
+                "width": 912,
                 "height": 720,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "A wooden chest or table bounces and hops…"
-                  ],
                   "ja": [
-                    "木の箱が跳ね回り"
+                    "跳ね回る木の箱と、引き出しの妖怪"
+                  ],
+                  "en": [
+                    "Bouncing wooden chest with spirits in its drawers"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "A wooden chest or table bounces and hops forward as mischievous spirits emerge from its drawers and openings, their wispy forms swirling around the animated furniture. The supernatural creatures peek out playfully before retreating back inside, while the wooden object rocks gently from side to side with each ghostly inhabitant's movement. The spirits' ethereal forms undulate like smoke as they circle the possessed furniture piece before settling back into their hiding spots. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: A wooden chest or table bounces and hops forward as mischievous spirits emerge from its drawers and openings, their wispy forms swirling around the animated furniture. The supernatural creatures peek out playfully before retreating back inside, while the wooden object rocks gently from side to side with each ghostly inhabitant's movement. The spirits' ethereal forms undulate like smoke as they circle the possessed furniture piece before settling back into their hiding spots. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "木の箱が跳ね回り、引き出しから妖怪たちが現れては隠れる。煙のような霊体が家具の周りを漂う。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：木の箱が跳ね回り、引き出しから妖怪たちが現れては隠れる。煙のような霊体が家具の周りを漂う。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=31827,143,3466,2733 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=31827,143,3466,2733"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "木の箱が跳ね回り、引き出しから妖怪たちが現れては隠れる。煙のような霊体が家具の周りを漂う。"
+                      ],
+                      "en": [
+                        "A wooden chest or table bounces and hops forward as mischievous spirits emerge from its drawers and openings, their wispy forms swirling around the animated furniture. The supernatural creatures peek out playfully before retreating back inside, while the wooden object rocks gently from side to side with each ghostly inhabitant's movement. The spirits' ethereal forms undulate like smoke as they circle the possessed furniture piece before settling back into their hiding spots. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=31827,143,3466,2733"
             },
@@ -147,23 +612,80 @@
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 850,
-                "height": 719,
+                "height": 718,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "Three supernatural beings dance and cavo…"
-                  ],
                   "ja": [
-                    "三体の妖怪が賑やかな行列で踊る"
+                    "踊りながら練り歩く三体の妖怪"
+                  ],
+                  "en": [
+                    "Three yōkai dancing in procession"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "Three supernatural beings dance and cavort in a lively procession - the large figure in green and red robes sways and steps forward with exaggerated theatrical movements, while the red-faced demon above gestures dramatically with its fan, and the smaller figure below hops and bounces playfully while carrying its drum. Their flowing garments ripple and flutter with each movement, and they occasionally turn their heads or shift their positions while maintaining the rhythmic forward progression of their eternal parade. The entire group returns to their original formation after completing their animated sequence. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: Three supernatural beings dance and cavort in a lively procession - the large figure in green and red robes sways and steps forward with exaggerated theatrical movements, while the red-faced demon above gestures dramatically with its fan, and the smaller figure below hops and bounces playfully while carrying its drum. Their flowing garments ripple and flutter with each movement, and they occasionally turn their heads or shift their positions while maintaining the rhythmic forward progression of their eternal parade. The entire group returns to their original formation after completing their animated sequence. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "三体の妖怪が賑やかな行列で踊る。緑と赤の衣の大きな者が大げさに歩き、赤い顔の鬼が扇を振り、小さな者が太鼓を持って跳ねる。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：三体の妖怪が賑やかな行列で踊る。緑と赤の衣の大きな者が大げさに歩き、赤い顔の鬼が扇を振り、小さな者が太鼓を持って跳ねる。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=35325,163,3220,2727 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=35325,163,3220,2727"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "三体の妖怪が賑やかな行列で踊る。緑と赤の衣の大きな者が大げさに歩き、赤い顔の鬼が扇を振り、小さな者が太鼓を持って跳ねる。"
+                      ],
+                      "en": [
+                        "Three supernatural beings dance and cavort in a lively procession - the large figure in green and red robes sways and steps forward with exaggerated theatrical movements, while the red-faced demon above gestures dramatically with its fan, and the smaller figure below hops and bounces playfully while carrying its drum. Their flowing garments ripple and flutter with each movement, and they occasionally turn their heads or shift their positions while maintaining the rhythmic forward progression of their eternal parade. The entire group returns to their original formation after completing their animated sequence. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=35325,163,3220,2727"
             },
@@ -175,24 +697,81 @@
                 "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_005.mp4",
                 "type": "Video",
                 "format": "video/mp4",
-                "width": 979,
+                "width": 978,
                 "height": 1080,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "A kappa-like demon strides forward with …"
-                  ],
                   "ja": [
-                    "河童のような鬼が蓮の葉を掲げ"
+                    "蓮の葉を掲げて歩く河童のような鬼"
+                  ],
+                  "en": [
+                    "Kappa-like demon holding up a lotus leaf"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "A kappa-like demon strides forward with determined steps, its webbed feet splashing slightly with each footfall. The flowing white robes billow and ripple in the night breeze while the creature's outstretched arms sway naturally with its walking rhythm. The large lotus leaf held aloft gently rocks and rotates as if caught by wind currents, creating a graceful parasol-like motion above. After completing several purposeful steps, the demon cycles back to its initial striding pose. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: A kappa-like demon strides forward with determined steps, its webbed feet splashing slightly with each footfall. The flowing white robes billow and ripple in the night breeze while the creature's outstretched arms sway naturally with its walking rhythm. The large lotus leaf held aloft gently rocks and rotates as if caught by wind currents, creating a graceful parasol-like motion above. After completing several purposeful steps, the demon cycles back to its initial striding pose. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "河童のような鬼が蓮の葉を掲げ、決然と歩く。白い衣が夜風に揺れ、蓮の葉が傘のように回転する。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：河童のような鬼が蓮の葉を掲げ、決然と歩く。白い衣が夜風に揺れ、蓮の葉が傘のように回転する。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=38601,181,2440,2690 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=38601,181,2440,2690"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "河童のような鬼が蓮の葉を掲げ、決然と歩く。白い衣が夜風に揺れ、蓮の葉が傘のように回転する。"
+                      ],
+                      "en": [
+                        "A kappa-like demon strides forward with determined steps, its webbed feet splashing slightly with each footfall. The flowing white robes billow and ripple in the night breeze while the creature's outstretched arms sway naturally with its walking rhythm. The large lotus leaf held aloft gently rocks and rotates as if caught by wind currents, creating a graceful parasol-like motion above. After completing several purposeful steps, the demon cycles back to its initial striding pose. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=38601,181,2440,2690"
             },
@@ -204,24 +783,81 @@
                 "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_006.mp4",
                 "type": "Video",
                 "format": "video/mp4",
-                "width": 567,
+                "width": 566,
                 "height": 720,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "A demonic figure in flowing robes dances…"
-                  ],
                   "ja": [
-                    "流れる衣の鬼がシンバルを打ち鳴らしながら激しく踊る"
+                    "シンバルを打ち鳴らして踊る鬼"
+                  ],
+                  "en": [
+                    "Demon dancing with cymbals"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "A demonic figure in flowing robes dances wildly while brandishing cymbals, its arms swaying rhythmically as it strikes the instruments together in a hypnotic percussion. The creature's red hakama pants ripple and flutter with each energetic movement, while its long hair whips back and forth. A fox-like spirit below playfully circles around the dancing demon, its tail swishing as it moves in a continuous orbit. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: A demonic figure in flowing robes dances wildly while brandishing cymbals, its arms swaying rhythmically as it strikes the instruments together in a hypnotic percussion. The creature's red hakama pants ripple and flutter with each energetic movement, while its long hair whips back and forth. A fox-like spirit below playfully circles around the dancing demon, its tail swishing as it moves in a continuous orbit. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "流れる衣の鬼がシンバルを打ち鳴らしながら激しく踊る。赤い袴がはためき、下方では狐の精霊が周りを駆け回る。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：流れる衣の鬼がシンバルを打ち鳴らしながら激しく踊る。赤い袴がはためき、下方では狐の精霊が周りを駆け回る。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=41097,155,2146,2721 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=41097,155,2146,2721"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "流れる衣の鬼がシンバルを打ち鳴らしながら激しく踊る。赤い袴がはためき、下方では狐の精霊が周りを駆け回る。"
+                      ],
+                      "en": [
+                        "A demonic figure in flowing robes dances wildly while brandishing cymbals, its arms swaying rhythmically as it strikes the instruments together in a hypnotic percussion. The creature's red hakama pants ripple and flutter with each energetic movement, while its long hair whips back and forth. A fox-like spirit below playfully circles around the dancing demon, its tail swishing as it moves in a continuous orbit. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=41097,155,2146,2721"
             },
@@ -233,24 +869,81 @@
                 "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_007.mp4",
                 "type": "Video",
                 "format": "video/mp4",
-                "width": 927,
+                "width": 926,
                 "height": 720,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "The red-faced demon with the white hood …"
-                  ],
                   "ja": [
-                    "白頭巾の赤い顔の鬼が緑の縄を八の字に振り回す"
+                    "緑の縄を振り回す赤い顔の鬼"
+                  ],
+                  "en": [
+                    "Red-faced demon swinging a green rope"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "The red-faced demon with the white hood gracefully swings the long green rope or whip in a rhythmic figure-eight pattern, his body swaying slightly with each fluid motion. His white robes flutter gently as he moves, while his fierce expression remains focused on the hypnotic dance of the green cord through the air. The rope traces smooth arcs that loop back to the starting position, creating a mesmerizing continuous cycle. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: The red-faced demon with the white hood gracefully swings the long green rope or whip in a rhythmic figure-eight pattern, his body swaying slightly with each fluid motion. His white robes flutter gently as he moves, while his fierce expression remains focused on the hypnotic dance of the green cord through the air. The rope traces smooth arcs that loop back to the starting position, creating a mesmerizing continuous cycle. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "白頭巾の赤い顔の鬼が緑の縄を八の字に振り回す。白い衣が揺れ、縄が滑らかな弧を描いて舞う。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：白頭巾の赤い顔の鬼が緑の縄を八の字に振り回す。白い衣が揺れ、縄が滑らかな弧を描いて舞う。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=43300,142,3506,2721 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=43300,142,3506,2721"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "白頭巾の赤い顔の鬼が緑の縄を八の字に振り回す。白い衣が揺れ、縄が滑らかな弧を描いて舞う。"
+                      ],
+                      "en": [
+                        "The red-faced demon with the white hood gracefully swings the long green rope or whip in a rhythmic figure-eight pattern, his body swaying slightly with each fluid motion. His white robes flutter gently as he moves, while his fierce expression remains focused on the hypnotic dance of the green cord through the air. The rope traces smooth arcs that loop back to the starting position, creating a mesmerizing continuous cycle. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=43300,142,3506,2721"
             },
@@ -264,22 +957,79 @@
                 "format": "video/mp4",
                 "width": 364,
                 "height": 1080,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "The candle-carrying demon sways gently f…"
-                  ],
                   "ja": [
-                    "蝋燭を持つ妖怪が頭の上の皿でバランスを取りながらゆっくり揺れる"
+                    "頭に皿を載せ、蝋燭を持って揺れる妖怪"
+                  ],
+                  "en": [
+                    "Candle-bearing yōkai balancing a dish on its head"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "The candle-carrying demon sways gently from side to side while balancing the dish on its head, the flame flickering softly in rhythm with its movement. Its long pole arm rocks slightly as it shifts its weight, and the small lantern at the pole's end swings in a gentle pendulum motion. The creature's base rotates slowly in place, completing a full turn before returning to its original position. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: The candle-carrying demon sways gently from side to side while balancing the dish on its head, the flame flickering softly in rhythm with its movement. Its long pole arm rocks slightly as it shifts its weight, and the small lantern at the pole's end swings in a gentle pendulum motion. The creature's base rotates slowly in place, completing a full turn before returning to its original position. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "蝋燭を持つ妖怪が頭の上の皿でバランスを取りながらゆっくり揺れる。長い棒の先の提灯が振り子のように揺れる。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：蝋燭を持つ妖怪が頭の上の皿でバランスを取りながらゆっくり揺れる。長い棒の先の提灯が振り子のように揺れる。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=46830,124,930,2758 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=46830,124,930,2758"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "蝋燭を持つ妖怪が頭の上の皿でバランスを取りながらゆっくり揺れる。長い棒の先の提灯が振り子のように揺れる。"
+                      ],
+                      "en": [
+                        "The candle-carrying demon sways gently from side to side while balancing the dish on its head, the flame flickering softly in rhythm with its movement. Its long pole arm rocks slightly as it shifts its weight, and the small lantern at the pole's end swings in a gentle pendulum motion. The creature's base rotates slowly in place, completing a full turn before returning to its original position. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=46830,124,930,2758"
             },
@@ -293,22 +1043,79 @@
                 "format": "video/mp4",
                 "width": 942,
                 "height": 720,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "A serpentine white dragon with an elonga…"
-                  ],
                   "ja": [
-                    "白い龍が空中を優雅にうねりながら進む"
+                    "空をうねって進む白い龍"
+                  ],
+                  "en": [
+                    "White dragon undulating through the air"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "A serpentine white dragon with an elongated neck gracefully undulates through the air, its body creating smooth S-curves as it moves. The creature's neck sways gently from side to side while its flowing form creates rippling waves along its entire length. Its mouth opens and closes slowly as if breathing or speaking ancient words, while its body maintains a continuous flowing motion that cycles seamlessly. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: A serpentine white dragon with an elongated neck gracefully undulates through the air, its body creating smooth S-curves as it moves. The creature's neck sways gently from side to side while its flowing form creates rippling waves along its entire length. Its mouth opens and closes slowly as if breathing or speaking ancient words, while its body maintains a continuous flowing motion that cycles seamlessly. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "白い龍が空中を優雅にうねりながら進む。長い首が左右に揺れ、全身が波のように流れる。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：白い龍が空中を優雅にうねりながら進む。長い首が左右に揺れ、全身が波のように流れる。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=47800,106,3633,2776 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=47800,106,3633,2776"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "白い龍が空中を優雅にうねりながら進む。長い首が左右に揺れ、全身が波のように流れる。"
+                      ],
+                      "en": [
+                        "A serpentine white dragon with an elongated neck gracefully undulates through the air, its body creating smooth S-curves as it moves. The creature's neck sways gently from side to side while its flowing form creates rippling waves along its entire length. Its mouth opens and closes slowly as if breathing or speaking ancient words, while its body maintains a continuous flowing motion that cycles seamlessly. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=47800,106,3633,2776"
             },
@@ -322,22 +1129,79 @@
                 "format": "video/mp4",
                 "width": 1920,
                 "height": 980,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "The pale"
-                  ],
                   "ja": [
-                    "黒髪の細長い妖怪が霧の中を漂う"
+                    "霧の中を漂う黒髪の細長い妖怪"
+                  ],
+                  "en": [
+                    "Long dark-haired yōkai floating in the mist"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "The pale, elongated creature with dark hair gracefully floats forward through the misty air, its serpentine lower body undulating in smooth, wave-like motions. Its arms sway gently as it drifts, while wisps of ethereal mist swirl around its form. The flowing movement creates a hypnotic rhythm as the spirit glides in an endless, cyclical path. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: The pale, elongated creature with dark hair gracefully floats forward through the misty air, its serpentine lower body undulating in smooth, wave-like motions. Its arms sway gently as it drifts, while wisps of ethereal mist swirl around its form. The flowing movement creates a hypnotic rhythm as the spirit glides in an endless, cyclical path. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "黒髪の細長い妖怪が霧の中を漂う。蛇のような下半身がうねり、霊的な霧が周りに渦巻く。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：黒髪の細長い妖怪が霧の中を漂う。蛇のような下半身がうねり、霊的な霧が周りに渦巻く。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=51457,114,5414,2764 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=51457,114,5414,2764"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "黒髪の細長い妖怪が霧の中を漂う。蛇のような下半身がうねり、霊的な霧が周りに渦巻く。"
+                      ],
+                      "en": [
+                        "The pale, elongated creature with dark hair gracefully floats forward through the misty air, its serpentine lower body undulating in smooth, wave-like motions. Its arms sway gently as it drifts, while wisps of ethereal mist swirl around its form. The flowing movement creates a hypnotic rhythm as the spirit glides in an endless, cyclical path. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=51457,114,5414,2764"
             },
@@ -351,22 +1215,79 @@
                 "format": "video/mp4",
                 "width": 990,
                 "height": 720,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "The serpentine dragon creature slithers …"
-                  ],
                   "ja": [
-                    "蛇のような龍がうねりながら前に進む"
+                    "うねりながら進む蛇のような龍"
+                  ],
+                  "en": [
+                    "Serpentine dragon slithering forward"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "The serpentine dragon creature slithers forward with undulating body movements, its scaled form weaving sinuously as it progresses through the nocturnal parade. Its long tail curves and flexes behind while its head bobs slightly with each forward motion. The creature's limbs move in a rhythmic crawling gait, returning to its original position to complete the walking cycle. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: The serpentine dragon creature slithers forward with undulating body movements, its scaled form weaving sinuously as it progresses through the nocturnal parade. Its long tail curves and flexes behind while its head bobs slightly with each forward motion. The creature's limbs move in a rhythmic crawling gait, returning to its original position to complete the walking cycle. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "蛇のような龍がうねりながら前に進む。鱗のある体がくねくねと進み、頭が前後に揺れる。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：蛇のような龍がうねりながら前に進む。鱗のある体がくねくねと進み、頭が前後に揺れる。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=58796,158,3744,2721 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=58796,158,3744,2721"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "蛇のような龍がうねりながら前に進む。鱗のある体がくねくねと進み、頭が前後に揺れる。"
+                      ],
+                      "en": [
+                        "The serpentine dragon creature slithers forward with undulating body movements, its scaled form weaving sinuously as it progresses through the nocturnal parade. Its long tail curves and flexes behind while its head bobs slightly with each forward motion. The creature's limbs move in a rhythmic crawling gait, returning to its original position to complete the walking cycle. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=58796,158,3744,2721"
             },
@@ -379,23 +1300,80 @@
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
-                "height": 709,
+                "height": 708,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "A menacing demon with wild hair and fier…"
-                  ],
                   "ja": [
-                    "荒い髪の恐ろしい鬼が空中を突進し"
+                    "逃げる人を追う荒い髪の鬼"
+                  ],
+                  "en": [
+                    "Wild-haired demon chasing a fleeing man"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "A menacing demon with wild hair and fierce expression lunges forward through the air, its muscular arms reaching out aggressively while its legs kick behind in a dynamic flying motion. Its hair and clothing flutter wildly in the wind as it moves in an arc-like pattern, swooping down toward the fleeing figure below before pulling back up to repeat the threatening dive. The pursued figure scrambles frantically on the ground, arms pumping as they run in terror, occasionally glancing back over their shoulder at their supernatural pursuer. The cycle repeats as the demon continues its relentless aerial chase while the human figure maintains their desperate escape attempt. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: A menacing demon with wild hair and fierce expression lunges forward through the air, its muscular arms reaching out aggressively while its legs kick behind in a dynamic flying motion. Its hair and clothing flutter wildly in the wind as it moves in an arc-like pattern, swooping down toward the fleeing figure below before pulling back up to repeat the threatening dive. The pursued figure scrambles frantically on the ground, arms pumping as they run in terror, occasionally glancing back over their shoulder at their supernatural pursuer. The cycle repeats as the demon continues its relentless aerial chase while the human figure maintains their desperate escape attempt. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "荒い髪の恐ろしい鬼が空中を突進し、逃げる人間を追いかける。鬼が急降下を繰り返し、人間は必死に走り続ける。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：荒い髪の恐ろしい鬼が空中を突進し、逃げる人間を追いかける。鬼が急降下を繰り返し、人間は必死に走り続ける。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=62588,151,4921,2727 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=62588,151,4921,2727"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "荒い髪の恐ろしい鬼が空中を突進し、逃げる人間を追いかける。鬼が急降下を繰り返し、人間は必死に走り続ける。"
+                      ],
+                      "en": [
+                        "A menacing demon with wild hair and fierce expression lunges forward through the air, its muscular arms reaching out aggressively while its legs kick behind in a dynamic flying motion. Its hair and clothing flutter wildly in the wind as it moves in an arc-like pattern, swooping down toward the fleeing figure below before pulling back up to repeat the threatening dive. The pursued figure scrambles frantically on the ground, arms pumping as they run in terror, occasionally glancing back over their shoulder at their supernatural pursuer. The cycle repeats as the demon continues its relentless aerial chase while the human figure maintains their desperate escape attempt. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=62588,151,4921,2727"
             },
@@ -407,24 +1385,81 @@
                 "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_013.mp4",
                 "type": "Video",
                 "format": "video/mp4",
-                "width": 825,
+                "width": 824,
                 "height": 720,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "A miko priestess in flowing red hakama p…"
-                  ],
                   "ja": [
-                    "巫女が赤い袴と花柄の着物で優雅に舞を舞い"
+                    "舞う巫女と、首を伸ばす大きな亀"
+                  ],
+                  "en": [
+                    "Dancing miko and a large turtle stretching its neck"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "A miko priestess in flowing red hakama pants and floral kimono performs a graceful ritual dance, her arms moving in slow, ceremonial gestures while her layered garments sway gently with each step. The large turtle-like creature beside her slowly extends and retracts its neck, blinking its ancient eyes as its shell subtly rises and falls with breathing. The priestess's white hair ornaments flutter softly as she completes her circular dance movement, returning to her original stance. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: A miko priestess in flowing red hakama pants and floral kimono performs a graceful ritual dance, her arms moving in slow, ceremonial gestures while her layered garments sway gently with each step. The large turtle-like creature beside her slowly extends and retracts its neck, blinking its ancient eyes as its shell subtly rises and falls with breathing. The priestess's white hair ornaments flutter softly as she completes her circular dance movement, returning to her original stance. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "巫女が赤い袴と花柄の着物で優雅に舞を舞い、隣の大きな亀が首を伸び縮みさせ、甲羅がゆっくり呼吸する。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：巫女が赤い袴と花柄の着物で優雅に舞を舞い、隣の大きな亀が首を伸び縮みさせ、甲羅がゆっくり呼吸する。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=67557,118,3132,2733 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=67557,118,3132,2733"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "巫女が赤い袴と花柄の着物で優雅に舞を舞い、隣の大きな亀が首を伸び縮みさせ、甲羅がゆっくり呼吸する。"
+                      ],
+                      "en": [
+                        "A miko priestess in flowing red hakama pants and floral kimono performs a graceful ritual dance, her arms moving in slow, ceremonial gestures while her layered garments sway gently with each step. The large turtle-like creature beside her slowly extends and retracts its neck, blinking its ancient eyes as its shell subtly rises and falls with breathing. The priestess's white hair ornaments flutter softly as she completes her circular dance movement, returning to her original stance. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=67557,118,3132,2733"
             },
@@ -438,22 +1473,79 @@
                 "format": "video/mp4",
                 "width": 1920,
                 "height": 962,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "The grotesque demons and spirits sway an…"
-                  ],
                   "ja": [
-                    "異形の鬼や精霊たちが夜の行列を練り歩く"
+                    "練り歩く異形の鬼と精霊"
+                  ],
+                  "en": [
+                    "Grotesque demons and spirits in procession"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "The grotesque demons and spirits sway and bob as they process through their nocturnal parade, with flowing robes and hair undulating in ethereal wind. The floating heads drift up and down in gentle arcs while the standing figures rock side to side with slow, supernatural gaits. Their expressions subtly shift between menacing grins and contemplative stares as they continue their endless march from right to left across the composition. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: The grotesque demons and spirits sway and bob as they process through their nocturnal parade, with flowing robes and hair undulating in ethereal wind. The floating heads drift up and down in gentle arcs while the standing figures rock side to side with slow, supernatural gaits. Their expressions subtly shift between menacing grins and contemplative stares as they continue their endless march from right to left across the composition. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "異形の鬼や精霊たちが夜の行列を練り歩く。浮遊する頭が上下に漂い、立っている者たちがゆっくりと揺れる。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：異形の鬼や精霊たちが夜の行列を練り歩く。浮遊する頭が上下に漂い、立っている者たちがゆっくりと揺れる。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=70746,116,5430,2721 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=70746,116,5430,2721"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "異形の鬼や精霊たちが夜の行列を練り歩く。浮遊する頭が上下に漂い、立っている者たちがゆっくりと揺れる。"
+                      ],
+                      "en": [
+                        "The grotesque demons and spirits sway and bob as they process through their nocturnal parade, with flowing robes and hair undulating in ethereal wind. The floating heads drift up and down in gentle arcs while the standing figures rock side to side with slow, supernatural gaits. Their expressions subtly shift between menacing grins and contemplative stares as they continue their endless march from right to left across the composition. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=70746,116,5430,2721"
             },
@@ -466,23 +1558,80 @@
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1920,
-                "height": 1059,
+                "height": 1058,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "A group of supernatural creatures moves …"
-                  ],
                   "ja": [
-                    "妖怪たちが右から左へゆっくりと行進する"
+                    "右から左へ行進する妖怪たち"
+                  ],
+                  "en": [
+                    "Yōkai marching from right to left"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "A group of supernatural creatures moves in a slow, rhythmic procession from right to left, each maintaining their distinct gait - the winged tengu figure flaps its wings occasionally while striding forward, the central demon sways its large head as it shuffles along, and the rightmost multi-headed creature undulates with serpentine grace. Their robes and fabric elements flutter gently in an otherworldly breeze as they continue their eternal parade. The small objects they carry bob and sway with their movements, creating a hypnotic collective rhythm. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: A group of supernatural creatures moves in a slow, rhythmic procession from right to left, each maintaining their distinct gait - the winged tengu figure flaps its wings occasionally while striding forward, the central demon sways its large head as it shuffles along, and the rightmost multi-headed creature undulates with serpentine grace. Their robes and fabric elements flutter gently in an otherworldly breeze as they continue their eternal parade. The small objects they carry bob and sway with their movements, creating a hypnotic collective rhythm. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "妖怪たちが右から左へゆっくりと行進する。天狗が翼を羽ばたかせ、中央の鬼が大きな頭を揺らし、多頭の妖怪がうねる。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：妖怪たちが右から左へゆっくりと行進する。天狗が翼を羽ばたかせ、中央の鬼が大きな頭を揺らし、多頭の妖怪がうねる。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=18851,158,4929,2720 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=18851,158,4929,2720"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "妖怪たちが右から左へゆっくりと行進する。天狗が翼を羽ばたかせ、中央の鬼が大きな頭を揺らし、多頭の妖怪がうねる。"
+                      ],
+                      "en": [
+                        "A group of supernatural creatures moves in a slow, rhythmic procession from right to left, each maintaining their distinct gait - the winged tengu figure flaps its wings occasionally while striding forward, the central demon sways its large head as it shuffles along, and the rightmost multi-headed creature undulates with serpentine grace. Their robes and fabric elements flutter gently in an otherworldly breeze as they continue their eternal parade. The small objects they carry bob and sway with their movements, creating a hypnotic collective rhythm. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=18851,158,4929,2720"
             },
@@ -496,22 +1645,79 @@
                 "format": "video/mp4",
                 "width": 1280,
                 "height": 716,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "The turbaned figure on the left sways rh…"
-                  ],
                   "ja": [
-                    "左のターバンの者がスクロールを持って歩き"
+                    "巻物を持つターバンの者、青い衣の獣、杖を握る赤い鬼"
+                  ],
+                  "en": [
+                    "Turbaned figure with a scroll, blue-robed beast and red demon with a staff"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "The turbaned figure on the left sways rhythmically as it walks forward, its flowing robes and decorative streamers undulating gently in an ethereal breeze while clutching scrolls that flutter softly. The central beast-like creature in blue robes shuffles along with a hunched, lumbering gait, its wild fur rippling as it moves. The red-skinned oni on the right strides confidently with an exaggerated swagger, its wild hair and tattered garments swaying with each step as it grips its long staff. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: The turbaned figure on the left sways rhythmically as it walks forward, its flowing robes and decorative streamers undulating gently in an ethereal breeze while clutching scrolls that flutter softly. The central beast-like creature in blue robes shuffles along with a hunched, lumbering gait, its wild fur rippling as it moves. The red-skinned oni on the right strides confidently with an exaggerated swagger, its wild hair and tattered garments swaying with each step as it grips its long staff. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "左のターバンの者がスクロールを持って歩き、中央の青い衣の獣が前かがみで進み、右の赤い鬼が杖を握って堂々と闊歩する。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：左のターバンの者がスクロールを持って歩き、中央の青い衣の獣が前かがみで進み、右の赤い鬼が杖を握って堂々と闊歩する。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=13945,161,4873,2727 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=13945,161,4873,2727"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "左のターバンの者がスクロールを持って歩き、中央の青い衣の獣が前かがみで進み、右の赤い鬼が杖を握って堂々と闊歩する。"
+                      ],
+                      "en": [
+                        "The turbaned figure on the left sways rhythmically as it walks forward, its flowing robes and decorative streamers undulating gently in an ethereal breeze while clutching scrolls that flutter softly. The central beast-like creature in blue robes shuffles along with a hunched, lumbering gait, its wild fur rippling as it moves. The red-skinned oni on the right strides confidently with an exaggerated swagger, its wild hair and tattered garments swaying with each step as it grips its long staff. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=13945,161,4873,2727"
             },
@@ -523,24 +1729,81 @@
                 "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_017.mp4",
                 "type": "Video",
                 "format": "video/mp4",
-                "width": 1025,
+                "width": 1024,
                 "height": 1080,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "A hairy horned demon on the left takes c…"
-                  ],
                   "ja": [
-                    "左の角のある毛深い鬼が白い布を掲げて後退し"
+                    "白い布を掲げて退く角の鬼と、しゃがむ斑の妖怪"
+                  ],
+                  "en": [
+                    "Horned demon backing away with a white cloth, and a spotted yōkai"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "A hairy horned demon on the left takes cautious steps backward while holding up a white cloth, its long dark hair swaying with each movement. On the right, a spotted creature with wild spiky hair crouches and sways side to side, its clawed hands gesturing expressively as small horns on its head bob with the motion. Both figures rock gently in place, the demon's cloth fluttering softly in an unfelt breeze. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: A hairy horned demon on the left takes cautious steps backward while holding up a white cloth, its long dark hair swaying with each movement. On the right, a spotted creature with wild spiky hair crouches and sways side to side, its clawed hands gesturing expressively as small horns on its head bob with the motion. Both figures rock gently in place, the demon's cloth fluttering softly in an unfelt breeze. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "左の角のある毛深い鬼が白い布を掲げて後退し、右の斑点のある妖怪がしゃがんで左右に揺れる。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：左の角のある毛深い鬼が白い布を掲げて後退し、右の斑点のある妖怪がしゃがんで左右に揺れる。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=11329,171,2584,2721 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=11329,171,2584,2721"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "左の角のある毛深い鬼が白い布を掲げて後退し、右の斑点のある妖怪がしゃがんで左右に揺れる。"
+                      ],
+                      "en": [
+                        "A hairy horned demon on the left takes cautious steps backward while holding up a white cloth, its long dark hair swaying with each movement. On the right, a spotted creature with wild spiky hair crouches and sways side to side, its clawed hands gesturing expressively as small horns on its head bob with the motion. Both figures rock gently in place, the demon's cloth fluttering softly in an unfelt breeze. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=11329,171,2584,2721"
             },
@@ -552,24 +1815,81 @@
                 "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_018.mp4",
                 "type": "Video",
                 "format": "video/mp4",
-                "width": 1353,
+                "width": 1352,
                 "height": 1080,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "The wicker basket sways gently from side…"
-                  ],
                   "ja": [
-                    "籠が左右に揺れ"
+                    "炎が踊る、揺れる籠"
+                  ],
+                  "en": [
+                    "Swaying basket with dancing flames"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "The wicker basket sways gently from side to side as supernatural flames dance and flicker from its opening, casting shifting orange and red light. Small demon spirits peek out and duck back into the basket playfully while wispy smoke tendrils curl upward. The basket rocks slightly as if being carried by invisible hands, with the flames pulsing brighter and dimmer in a rhythmic cycle. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: The wicker basket sways gently from side to side as supernatural flames dance and flicker from its opening, casting shifting orange and red light. Small demon spirits peek out and duck back into the basket playfully while wispy smoke tendrils curl upward. The basket rocks slightly as if being carried by invisible hands, with the flames pulsing brighter and dimmer in a rhythmic cycle. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "籠が左右に揺れ、開口部から超自然的な炎が踊る。小さな鬼が覗いては隠れ、煙が立ち上る。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：籠が左右に揺れ、開口部から超自然的な炎が踊る。小さな鬼が覗いては隠れ、煙が立ち上る。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=7871,185,3426,2734 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=7871,185,3426,2734"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "籠が左右に揺れ、開口部から超自然的な炎が踊る。小さな鬼が覗いては隠れ、煙が立ち上る。"
+                      ],
+                      "en": [
+                        "The wicker basket sways gently from side to side as supernatural flames dance and flicker from its opening, casting shifting orange and red light. Small demon spirits peek out and duck back into the basket playfully while wispy smoke tendrils curl upward. The basket rocks slightly as if being carried by invisible hands, with the flames pulsing brighter and dimmer in a rhythmic cycle. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=7871,185,3426,2734"
             },
@@ -581,24 +1901,81 @@
                 "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_019.mp4",
                 "type": "Video",
                 "format": "video/mp4",
-                "width": 1773,
+                "width": 1772,
                 "height": 1080,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "A horned demon with flowing robes leaps …"
-                  ],
                   "ja": [
-                    "角のある鬼が流れる衣で空中を優雅に跳ぶ"
+                    "衣をなびかせて跳ぶ角のある鬼"
+                  ],
+                  "en": [
+                    "Horned demon leaping with flowing robes"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "A horned demon with flowing robes leaps gracefully through the air, its limbs extending and contracting in a rhythmic bounding motion. Its wild hair and fabric sashes flutter and wave behind it as it moves through the misty atmosphere. The creature's expression shifts subtly between mischievous glee and focused determination as it continues its eternal flight through the night parade. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: A horned demon with flowing robes leaps gracefully through the air, its limbs extending and contracting in a rhythmic bounding motion. Its wild hair and fabric sashes flutter and wave behind it as it moves through the misty atmosphere. The creature's expression shifts subtly between mischievous glee and focused determination as it continues its eternal flight through the night parade. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "角のある鬼が流れる衣で空中を優雅に跳ぶ。髪と帯が風にたなびき、表情が悪戯っぽさと決意の間で変わる。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：角のある鬼が流れる衣で空中を優雅に跳ぶ。髪と帯が風にたなびき、表情が悪戯っぽさと決意の間で変わる。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=3299,175,4539,2764 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=3299,175,4539,2764"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "角のある鬼が流れる衣で空中を優雅に跳ぶ。髪と帯が風にたなびき、表情が悪戯っぽさと決意の間で変わる。"
+                      ],
+                      "en": [
+                        "A horned demon with flowing robes leaps gracefully through the air, its limbs extending and contracting in a rhythmic bounding motion. Its wild hair and fabric sashes flutter and wave behind it as it moves through the misty atmosphere. The creature's expression shifts subtly between mischievous glee and focused determination as it continues its eternal flight through the night parade. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=3299,175,4539,2764"
             },
@@ -610,24 +1987,81 @@
                 "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_020.mp4",
                 "type": "Video",
                 "format": "video/mp4",
-                "width": 1021,
+                "width": 1020,
                 "height": 1080,
+                "duration": 8.0,
                 "label": {
-                  "en": [
-                    "A tsukumogami arrow-spirit in grey robes…"
-                  ],
                   "ja": [
-                    "弓矢の付喪神が灰色の衣で大きな弓を構えて進む"
+                    "大きな弓を構えて進む弓矢の付喪神"
+                  ],
+                  "en": [
+                    "Bow-and-arrow tsukumogami striding with a large bow"
                   ]
                 },
                 "summary": {
                   "en": [
-                    "A tsukumogami arrow-spirit in grey robes strides forward while brandishing a large bow with a feathered arrow nocked, its body swaying with each determined step. Beside it, a mischievous flame-headed imp runs alongside, clutching a white cloth that billows behind it as flames flicker and dance atop its head. The bow sways and flexes slightly with each step while the arrow rattles in place, and the imp's bare feet pad rapidly as it struggles to keep pace with its taller companion. Gentle animation in the style of the original artwork."
+                    "AI-generated clip (Google Veo 3), not part of the original. Motion prompt: A tsukumogami arrow-spirit in grey robes strides forward while brandishing a large bow with a feathered arrow nocked, its body swaying with each determined step. Beside it, a mischievous flame-headed imp runs alongside, clutching a white cloth that billows behind it as flames flicker and dance atop its head. The bow sways and flexes slightly with each step while the arrow rattles in place, and the imp's bare feet pad rapidly as it struggles to keep pace with its taller companion. Gentle animation in the style of the original artwork."
                   ],
                   "ja": [
-                    "弓矢の付喪神が灰色の衣で大きな弓を構えて進む。隣で火焔の小鬼が白い布をなびかせながら走る。"
+                    "AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：弓矢の付喪神が灰色の衣で大きな弓を構えて進む。隣で火焔の小鬼が白い布をなびかせながら走る。"
                   ]
-                }
+                },
+                "metadata": [
+                  {
+                    "label": {
+                      "ja": [
+                        "種類"
+                      ],
+                      "en": [
+                        "Type"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "AI 生成の動画（Google Veo 3）。原資料には含まれない"
+                      ],
+                      "en": [
+                        "AI-generated video (Google Veo 3), not part of the original"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "もとにした範囲"
+                      ],
+                      "en": [
+                        "Made from"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "原資料の画像の xywh=29354,385,2329,2463 を切り出したもの"
+                      ],
+                      "en": [
+                        "A crop of the image of the original, xywh=29354,385,2329,2463"
+                      ]
+                    }
+                  },
+                  {
+                    "label": {
+                      "ja": [
+                        "動きの指示文"
+                      ],
+                      "en": [
+                        "Motion prompt"
+                      ]
+                    },
+                    "value": {
+                      "ja": [
+                        "弓矢の付喪神が灰色の衣で大きな弓を構えて進む。隣で火焔の小鬼が白い布をなびかせながら走る。"
+                      ],
+                      "en": [
+                        "A tsukumogami arrow-spirit in grey robes strides forward while brandishing a large bow with a feathered arrow nocked, its body swaying with each determined step. Beside it, a mischievous flame-headed imp runs alongside, clutching a white cloth that billows behind it as flames flicker and dance atop its head. The bow sways and flexes slightly with each step while the arrow rattles in place, and the imp's bare feet pad rapidly as it struggles to keep pace with its taller companion. Gentle animation in the style of the original artwork."
+                      ]
+                    }
+                  }
+                ]
               },
               "target": "https://example.org/hyakki/canvas/1#xywh=29354,385,2329,2463"
             }
