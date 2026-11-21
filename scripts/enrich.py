@@ -21,7 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / 'manifest.json'
-PAGES = 'https://nakamura196.github.io/hyakki-video-layers/'
+PAGES = 'https://hyakki-video.ldas.jp/'
 ITEM = 'https://da.dl.itc.u-tokyo.ac.jp/portal/assets/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b'
 SOURCE_MANIFEST = 'https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest'
 REUSE = 'https://www.lib.u-tokyo.ac.jp/ja/library/general/reuse'

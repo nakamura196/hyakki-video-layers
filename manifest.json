@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://nakamura196.github.io/hyakki-video-layers/manifest.json",
+  "id": "https://hyakki-video.ldas.jp/manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -366,7 +366,7 @@
   ],
   "homepage": [
     {
-      "id": "https://nakamura196.github.io/hyakki-video-layers/",
+      "id": "https://hyakki-video.ldas.jp/",
       "type": "Text",
       "format": "text/html",
       "label": {
@@ -454,7 +454,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_002.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_002.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -558,7 +558,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_003.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_003.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -680,7 +680,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_004.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_004.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1274,
@@ -784,7 +784,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_005.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_005.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 978,
@@ -888,7 +888,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_006.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_006.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 850,
@@ -992,7 +992,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_007.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_007.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -1096,7 +1096,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_008.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_008.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 364,
@@ -1200,7 +1200,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_009.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_009.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -1304,7 +1304,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_010.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_010.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -1408,7 +1408,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_011.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_011.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -1530,7 +1530,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_012.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_012.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -1634,7 +1634,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_013.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_013.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1236,
@@ -1738,7 +1738,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_014.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_014.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -1842,7 +1842,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_015.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_015.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -1946,7 +1946,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_016.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_016.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -2050,7 +2050,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_017.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_017.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1024,
@@ -2172,7 +2172,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_018.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_018.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -2294,7 +2294,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_019.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_019.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1280,
@@ -2398,7 +2398,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://nakamura196.github.io/hyakki-video-layers/videos/video_020.mp4",
+                "id": "https://hyakki-video.ldas.jp/videos/video_020.mp4",
                 "type": "Video",
                 "format": "video/mp4",
                 "width": 1020,
