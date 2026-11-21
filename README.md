@@ -6,8 +6,8 @@ A IIIF Presentation 3.0 manifest of the handscroll *Hyakki Yagyō-zu* (百鬼夜
 
 The manifest has the same shape as IIIF Cookbook recipe [0036 Composition from Multiple Images](https://iiif.io/api/cookbook/recipe/0036-composition-from-multiple-images/): a base image, plus more resources painted onto regions of the Canvas with `#xywh=`. Here each added resource is a `Video` instead of an `Image`. The Canvas has no `duration`. Each video's `summary` and `metadata` say that it is AI-generated, and keep the motion prompt used to generate it.
 
-- Manifest: https://nakamura196.github.io/hyakki-video-layers/manifest.json
-- View in IIIF Kasane: https://kasane.ldas.jp/en/viewer?manifest=https%3A%2F%2Fnakamura196.github.io%2Fhyakki-video-layers%2Fmanifest.json&tab=layers
+- Manifest: https://hyakki-video.ldas.jp/manifest.json
+- View in IIIF Kasane: https://kasane.ldas.jp/en/viewer?manifest=https%3A%2F%2Fhyakki-video.ldas.jp%2Fmanifest.json&tab=layers
 
 ## Contents
 
