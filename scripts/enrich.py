@@ -11,6 +11,8 @@ No `rights`: the General Library's terms (https://www.lib.u-tokyo.ac.jp/ja/libra
 Creative Commons or RightsStatements.org URI, and no new licence is given to the generated clips.
 The catalogue fields come from the University of Tokyo Digital Archive Portal, whose metadata is CC0.
 
+The motion prompts and the model of each clip are in scripts/prompts.json (video name → model, short labels, en, ja).
+
 Usage: python3 scripts/enrich.py   (in the repository root; edits manifest.json in place)
 """
 import json
@@ -26,37 +28,45 @@ REUSE = 'https://www.lib.u-tokyo.ac.jp/ja/library/general/reuse'
 IMAGE_SERVICE = 'https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif'
 USECASE = {'ja': 'https://kasane.ldas.jp/ja/usecases/hyakki-video-layers/', 'en': 'https://kasane.ldas.jp/en/usecases/hyakki-video-layers/'}
 REPO = 'https://github.com/nakamura196/hyakki-video-layers'
+PROMPTS = json.loads((ROOT / 'scripts' / 'prompts.json').read_text())
 
-# Short names for the list of clips (file name → ja, en)
-LABELS = {
-    'video_002': ('燃える器を抱えてよろめく白髪の鬼', 'White-haired demon staggering with a flaming vessel'),
-    'video_003': ('跳ね回る木の箱と、引き出しの妖怪', 'Bouncing wooden chest with spirits in its drawers'),
-    'video_004': ('踊りながら練り歩く三体の妖怪', 'Three yōkai dancing in procession'),
-    'video_005': ('蓮の葉を掲げて歩く河童のような鬼', 'Kappa-like demon holding up a lotus leaf'),
-    'video_006': ('シンバルを打ち鳴らして踊る鬼', 'Demon dancing with cymbals'),
-    'video_007': ('緑の縄を振り回す赤い顔の鬼', 'Red-faced demon swinging a green rope'),
-    'video_008': ('頭に皿を載せ、蝋燭を持って揺れる妖怪', 'Candle-bearing yōkai balancing a dish on its head'),
-    'video_009': ('空をうねって進む白い龍', 'White dragon undulating through the air'),
-    'video_010': ('霧の中を漂う黒髪の細長い妖怪', 'Long dark-haired yōkai floating in the mist'),
-    'video_011': ('うねりながら進む蛇のような龍', 'Serpentine dragon slithering forward'),
-    'video_012': ('逃げる人を追う荒い髪の鬼', 'Wild-haired demon chasing a fleeing man'),
-    'video_013': ('舞う巫女と、首を伸ばす大きな亀', 'Dancing miko and a large turtle stretching its neck'),
-    'video_014': ('練り歩く異形の鬼と精霊', 'Grotesque demons and spirits in procession'),
-    'video_015': ('右から左へ行進する妖怪たち', 'Yōkai marching from right to left'),
-    'video_016': ('巻物を持つターバンの者、青い衣の獣、杖を握る赤い鬼', 'Turbaned figure with a scroll, blue-robed beast and red demon with a staff'),
-    'video_017': ('白い布を掲げて退く角の鬼と、しゃがむ斑の妖怪', 'Horned demon backing away with a white cloth, and a spotted yōkai'),
-    'video_018': ('炎が踊る、揺れる籠', 'Swaying basket with dancing flames'),
-    'video_019': ('衣をなびかせて跳ぶ角のある鬼', 'Horned demon leaping with flowing robes'),
-    'video_020': ('大きな弓を構えて進む弓矢の付喪神', 'Bow-and-arrow tsukumogami striding with a large bow'),
+# Models, as Google Flow names them. Most clips are Omni; Omni refused some crops (Google's policy on sexual content,
+# likely the nearly naked figures), and for one crop it ignored the start frame, so those were made with Veo 3.1 Fast.
+MODELS = {
+    'omni': {'ja': 'Gemini Omni 1.2 Flash、Google Flow', 'en': 'Gemini Omni 1.2 Flash, Google Flow'},
+    'veo': {'ja': 'Veo 3.1 Fast、Google Flow', 'en': 'Veo 3.1 Fast, Google Flow'},
 }
+VEO_NOTE_TEXT = ('この動画は Veo 3.1 Fast で作った（Gemini Omni 1.2 Flash では作れなかったため）。'
+                '始まりと終わりのコマは原資料と同じだが、途中で人物が太い線の別の絵柄に描き直され、配置も変わる。'
+                '原資料に無いものが現れ、元の人物が消える所もある',
+                'This clip was made with Veo 3.1 Fast, because Gemini Omni 1.2 Flash could not make it. '
+                'Its first and last frames match the original, but in between the figures are redrawn in a different style with bolder lines, '
+                'and their layout changes. Things not in the picture appear, and some figures of the original disappear')
+
+# Short names for the list of clips (file name → ja, en), from scripts/prompts.json
+LABELS = {k: (v['label_ja'], v['label_en']) for k, v in PROMPTS.items()}
 
 
 def lang(ja, en):
     return {'ja': [ja], 'en': [en]}
 
 
+POST = ('動画は、切り出した範囲に合わせて端を切り、色を原資料に合わせたうえで、二つの処理をしている。'
+        '(a) 縁の帯（幅 24 画素、内側へ 96 画素でなじませる）は原資料の画素に置き換えた。'
+        '(b) 動いている所だけ動画を使い、ほかは原資料の画素のままにした。動いている所は、ぼかした明るさが時間の中央値から 6 を超えてずれる画素を、'
+        '24 画素広げ、32 画素でぼかして決めた（動画 1 本につき 1 枚の範囲）。そのため、止まっている紙や線は原資料のままで、ちらつかない',
+        'Each clip was trimmed to its region and colour-matched to the original, then two steps were applied. '
+        '(a) A band at the edge (24 px, blended over 96 px inwards) is replaced with the pixels of the original. '
+        '(b) Only the parts that move come from the video; everything else is the original pixels. The moving parts are the pixels whose blurred '
+        'brightness deviates from the temporal median by more than 6, grown by 24 px and feathered by 32 px (one mask per clip). '
+        'So the still paper and lines are the original and do not flicker')
+
+
 def entry(label_ja, label_en, value_ja, value_en=None):
     return {'label': lang(label_ja, label_en), 'value': lang(value_ja, value_en if value_en is not None else value_ja)}
+
+
+VEO_NOTE = lang(*VEO_NOTE_TEXT)
 
 
 def a(url, text):
@@ -75,6 +85,13 @@ m = json.loads(MANIFEST.read_text())
 canvas = m['items'][0]
 pages = {p['id'].rsplit('/', 1)[-1]: p for p in canvas['items']}
 videos = pages['videos']['items']
+names = [v['body']['id'].rsplit('/', 1)[-1].removesuffix('.mp4') for v in videos]
+missing = [n for n in names if n not in PROMPTS]
+if missing:
+    raise SystemExit(f'no prompt for {missing}')
+veo = [n.removeprefix('video_') for n in names if PROMPTS[n]['model'] == 'veo']
+n_veo, n_omni = len(veo), len(names) - len(veo)
+veo_ja, veo_en = '・'.join(veo), ', '.join(veo)
 
 new = {
     '@context': m['@context'],
@@ -122,23 +139,31 @@ new = {
               'they do not show what the original artist intended or how the scroll was presented. '
               'Shapes and colours differ from the picture in places, and things not in the picture appear.'),
         entry('改変の内容', 'Modifications',
-              '(1) 原資料の画像から、人物・妖怪の描かれた範囲を切り出した。(2) 切り出した画像と動きの指示文から、AI で 8 秒の動画を作った。'
-              '(3) 動画の端を切りそろえ、切り出した元の範囲（#xywh）に重ねた。原資料の画像は変えていない。',
-              '(1) Regions with figures were cropped from the image of the original. (2) Each crop and a motion prompt were turned into an 8-second clip by AI. '
-              '(3) The clips were trimmed and painted back on the regions they were cropped from (#xywh). The image of the original is unchanged.'),
+              '(1) 原資料の画像から、人物・妖怪の描かれた範囲を切り出した。'
+              '(2) 切り出した画像を始まりと終わりの両方のコマに指定し、動きの指示文とともに AI で 8 秒の動画を作った。'
+              '(3) 縁は原資料の画素に置き換え、動いている所だけ動画を使い、ほかは原資料の画素のままにした（下の「後処理」）。'
+              '(4) 切り出した元の範囲（#xywh）に重ねた。原資料の画像は変えていない。',
+              '(1) Regions with figures were cropped from the image of the original. '
+              '(2) Each crop was given as both the start frame and the end frame, and turned into an 8-second clip by AI with a motion prompt. '
+              '(3) The edge was replaced with the pixels of the original, and only the moving parts were taken from the video; everything else is the original pixels (see Post-processing). '
+              '(4) The clips were painted back on the regions they were cropped from (#xywh). The image of the original is unchanged.'),
+        entry('後処理', 'Post-processing', POST[0], POST[1]),
         entry('動画', 'Clips',
-              f'{len(videos)} 本、各 8 秒、音あり。絵の一部を切り出した画像と動きの指示文から、Google Veo 3 で生成した。'
-              '指示文は Claude Sonnet が、資料の説明と切り出した画像をもとに書いた。',
-              f'{len(videos)} clips, 8 seconds each, with sound. Generated with Google Veo 3 from a crop of the picture and a motion prompt. '
-              'The prompts were written by Claude Sonnet from a description of the scroll and the crop.'),
+              f'{len(videos)} 本、各 8 秒、音あり。絵の一部を切り出した画像と動きの指示文から、Google Flow で生成した。'
+              f'{n_omni} 本は Gemini Omni 1.2 Flash、{n_veo} 本（{veo_ja}）は Veo 3.1 Fast（Omni では作れなかったため。途中で絵柄が描き直される）。'
+              '指示文は Claude（Anthropic）が、切り出した画像を見て場面ごとに書いた。人物を位置と衣で名指しし、入れ替わらずに大きく動くよう指示している。',
+              f'{len(videos)} clips, 8 seconds each, with sound. Generated in Google Flow from a crop of the picture and a motion prompt. '
+              f'{n_omni} were made with Gemini Omni 1.2 Flash and {n_veo} ({veo_en}) with Veo 3.1 Fast, because Omni could not make them; those are redrawn in between. '
+              'The prompts were written by Claude (Anthropic) for each scene from the crop. They name each figure by its place and clothing, '
+              'and ask it to move clearly without turning into another figure.'),
         entry('作成', 'Made by', '中村 覚（東京大学）', 'Satoru Nakamura (The University of Tokyo)'),
         entry('関連', 'Related',
               f'{a(USECASE["ja"], "IIIF Kasane のユースケース")}、{a(REPO, "GitHub のリポジトリ")}',
               f'{a(USECASE["en"], "IIIF Kasane use case")}, {a(REPO, "GitHub repository")}'),
     ],
     'requiredStatement': entry('帰属表示', 'Attribution',
-                               '『百鬼夜行図』（東京大学総合図書館所蔵）を改変。重ねた動画は、この画像をもとに AI（Google Veo 3）が生成したもので、原資料には含まれない',
-                               'Hyakki Yagyō-zu (The University of Tokyo General Library), modified. The clips are generated by AI (Google Veo 3) from this image and are not part of the original'),
+                               '『百鬼夜行図』（東京大学総合図書館所蔵）を改変。重ねた動画は、この画像をもとに AI（Gemini Omni 1.2 Flash・Veo 3.1 Fast、Google Flow）が生成したもので、原資料には含まれない',
+                               'Hyakki Yagyō-zu (The University of Tokyo General Library), modified. The clips are generated by AI (Gemini Omni 1.2 Flash and Veo 3.1 Fast, Google Flow) from this image and are not part of the original'),
     'provider': [
         {
             'id': 'https://www.lib.u-tokyo.ac.jp/',
@@ -175,14 +200,10 @@ canvas_new = {'id': canvas['id'], 'type': 'Canvas', 'label': lang('百鬼夜行�
 canvas_new.update({k: v for k, v in canvas.items() if k not in ('id', 'type', 'label')})
 new['items'] = [canvas_new]
 
-# Each clip says it is AI-generated: in its summary (shown in viewers' layer lists) and in its own metadata.
-# The prompt is kept after the prefix; on a re-run the prefix is taken off first.
-PREFIX = {'ja': 'AI（Google Veo 3）が生成した動画。原資料には無い。動きの指示文：',
-          'en': 'AI-generated clip (Google Veo 3), not part of the original. Motion prompt: '}
-
-
-def prompt_of(text, key):
-    return text[len(PREFIX[key]):] if text.startswith(PREFIX[key]) else text
+# Each clip says it is AI-generated, and with which model: in its summary (shown in viewers' layer lists) and in its own metadata.
+def prefix(model):
+    return {'ja': f'AI（{MODELS[model]["ja"]}）が生成した動画。原資料には無い。動きの指示文：',
+            'en': f'AI-generated clip ({MODELS[model]["en"]}), not part of the original. Motion prompt: '}
 
 
 for v in videos:
@@ -192,19 +213,26 @@ for v in videos:
         raise SystemExit(f'no label for {name}')
     width, height, duration = probe(ROOT / 'videos' / f'{name}.mp4')
     ja, en = LABELS[name]
-    prompts = {k: prompt_of(t[0], k) for k, t in b['summary'].items()}
+    p = PROMPTS[name]
+    model = p['model']
+    pre = prefix(model)
     region = v['target'].split('#xywh=')[1]
+    meta = [
+        entry('種類', 'Type', f'AI 生成の動画（{MODELS[model]["ja"]}）。原資料には含まれない',
+              f'AI-generated video ({MODELS[model]["en"]}), not part of the original'),
+        entry('もとにした範囲', 'Made from', f'原資料の画像の xywh={region} を切り出したもの。始まりと終わりのコマに指定した',
+              f'A crop of the image of the original, xywh={region}, given as both the start and the end frame'),
+        entry('後処理', 'Post-processing', '縁は原資料の画素。動いている所だけ動画で、ほかは原資料の画素',
+              'The edge is the original pixels; only the moving parts come from the video, everything else is the original pixels'),
+        entry('動きの指示文', 'Motion prompt', p['ja'], p['en']),
+    ]
+    if model == 'veo':
+        meta.insert(1, {'label': lang('注意', 'Note'), 'value': VEO_NOTE})
     v['body'] = {'id': b['id'], 'type': 'Video', 'format': b.get('format', 'video/mp4'),
                  'width': width, 'height': height, 'duration': duration,
                  'label': lang(ja, en),
-                 'summary': {k: [PREFIX[k] + t] for k, t in prompts.items()},
-                 'metadata': [
-                     entry('種類', 'Type', 'AI 生成の動画（Google Veo 3）。原資料には含まれない',
-                           'AI-generated video (Google Veo 3), not part of the original'),
-                     entry('もとにした範囲', 'Made from', f'原資料の画像の xywh={region} を切り出したもの',
-                           f'A crop of the image of the original, xywh={region}'),
-                     entry('動きの指示文', 'Motion prompt', prompts['ja'], prompts['en']),
-                 ]}
+                 'summary': {'ja': [pre['ja'] + p['ja']], 'en': [pre['en'] + p['en']]},
+                 'metadata': meta}
 
 MANIFEST.write_text(json.dumps(new, ensure_ascii=False, indent=2) + '\n')
 print(f'{len(videos)} videos, {len(new["metadata"])} metadata entries → {MANIFEST}')
