@@ -227,7 +227,8 @@ for v in videos:
         entry('動きの指示文', 'Motion prompt', p['ja'], p['en']),
     ]
     if model == 'veo':
-        meta.insert(1, {'label': lang('注意', 'Note'), 'value': VEO_NOTE})
+        note = lang(p['note_ja'], p['note_en']) if 'note_ja' in p else VEO_NOTE
+        meta.insert(1, {'label': lang('注意', 'Note'), 'value': note})
     v['body'] = {'id': b['id'], 'type': 'Video', 'format': b.get('format', 'video/mp4'),
                  'width': width, 'height': height, 'duration': duration,
                  'label': lang(ja, en),
